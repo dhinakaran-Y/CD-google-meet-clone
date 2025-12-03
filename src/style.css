@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.nav-item{
+    @apply hover:bg-gray-200/80 p-2 rounded-full;
+}
