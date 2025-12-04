@@ -88,28 +88,102 @@
         </nav>
       </header>
       
-      <main class="grid grid-cols-2 my-8">
-        <section id="hero-section" class="col-span-2 text-center justify-center">
+      <main class="grid grid-cols-12 my-8">
+        <div class="left col-span-2">
+           <section class="w-full h-full space-y-1">
+            <!-- meets -->
+            <a href="#" class="flex text-blue-500 py-4 px-4 rounded-e-full  hover:cursor-pointer bg-blue-100 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mr-4" width="28" height="28"
+              viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3m1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z" />
+            </svg>
+              <p class="font-semibold">Meetings</p>
+            </a>
+            <!-- meets -->
+            <a href="#"
+              class="flex text-blue-500 py-4 px-4 rounded-e-full  hover:cursor-pointer hover:bg-blue-100 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="mr-4" width="28" height="28"
+                viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h12q.825 0 1.413.588T18 6v4.5l3.15-3.15q.25-.25.55-.125t.3.475v8.6q0 .35-.3.475t-.55-.125L18 13.5V18q0 .825-.587 1.413T16 20zm0-2h12V6H4zm0 0V6z" />
+              </svg>
+              <p class="font-semibold">Calls</p>
+            </a>
+           </section>
+        </div>
+        <div class="right col-span-10">
+        <section id="hero-section" class="text-center justify-center">
           <div class="w-2xl mx-auto pb-8 border-b">
           <div class="justify-center space-y-4 my-5">
           <p class="text-5xl">Video Calls and meeting for everyone</p>
           <p class="text-2xl text-gray-500">Connect, Collaborate, and Celebrate from anywhere with google Meet </p>
           </div>
           <div class="flex justify-center space-x-4">
-          <button class="flex bg-blue-500 text-white py-2 px-4 rounded-full justify-center items-center">
+          <button class="flex bg-blue-500 text-white py-2 px-4 rounded-full justify-center hover:cursor-pointer hover:bg-blue-600 items-center">
             <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
               viewBox="0 0 24 24">
               <path fill="currentColor"
                 d="M4 20q-.825 0-1.413-.588T2 18V6q0-.825.588-1.413T4 4h12q.825 0 1.413.588T18 6v4.5l3.15-3.15q.25-.25.55-.125t.3.475v8.6q0 .35-.3.475t-.55-.125L18 13.5V18q0 .825-.588 1.413T16 20H4Zm0-2h12V6H4v12Zm0 0V6v12Zm4.75-4.75l.8 1.75q.125.3.45.3t.45-.3l.8-1.75l1.75-.8q.3-.125.3-.45t-.3-.45l-1.75-.8l-.8-1.75q-.125-.3-.45-.3t-.45.3l-.8 1.75l-1.75.8q-.3.125-.3.45t.3.45l1.75.8Z" />
             </svg>
             New meeting</button>
-            <input type="text" class="py-2 px-4 border rounded-xl focus:border-blue-500 focus:outline-blue-500" placeholder="Enter a code are link">
+            <input type="text" class="py-2 px-6 border rounded-xl focus:border-blue-500 focus:outline-blue-500" placeholder="Enter a code are link">
             <button class="text-gray-400/80 font-semibold">Join</button>
             </div>
             </div>
         </section>
 
+        <!-- example interface -->
+        <section class="h-80 w-150 my-20 mx-auto text-center rounded overflow-hidden relative">
+            <img src="./public/images/video-call-2.png" alt="example-ui" class="w-full">
+             <!-- <div class="w-100 h-100 z-10 justify-center bg-[url(./public/images/video-call.webp)] object-contain"></div> -->
+              <div class="absolute w-full h-full bg-black/50 top-0 left-0 right-0">
+                <p class="translate-y-35 left-1/2 text-white/50 text-5xl">stay connected anywhere</p>
+              </div>
+              <p>Group Meeting</p>
+        </section>
+
         <!-- carousel -->
+        <section id="carousel" class="text-center justify-center my-40">
+          <div class="w-2xl mx-auto overflow-x-scroll overflow-hidden snap-x snap-mandatory flex scroll-smooth scrollbar-none">
+        
+            <div class="w-full shrink-0 snap-center relative" id="slide1d">
+              <img src="https://www.gstatic.com/meet/user_edu_get_a_link_light_90698cd7b4ca04d3005c962a3756c42d.svg" class="w-full h-64 object-contain" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3d" class="bg-blue-400 p-2 py-3 hover:bg-blue-500 rounded-full invisible">❮</a>
+                <a href="#slide2d" class="slide-btn">❯</a>
+              </div>
+              <p class="absolute left-63 right-10 top-1/2 flex -translate-y-1 transform justify-between">Get a link you can share</p>
+            </div>
+        
+            <div class="w-full shrink-0 snap-center relative" id="slide2d">
+              <img src="https://www.gstatic.com/meet/user_edu_scheduling_light_b352efa017e4f8f1ffda43e847820322.svg" class="w-full h-64 object-contain" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1d" class="slide-btn">❮</a>
+                <a href="#slide3d" class="slide-btn">❯</a>
+              </div>
+              <p class="absolute left-73 right-10 top-1/2 flex -translate-y-1 transform justify-between">Plane ahead</p>
+            </div>
+        
+            <div class="w-full shrink-0 snap-center relative" id="slide3d">
+              <img src="https://www.gstatic.com/meet/user_edu_safety_light_e04a2bbb449524ef7e49ea36d5f25b65.svg" class="w-full h-64 object-contain" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2d" class="slide-btn">❮</a>
+                <a href="#slide1d" class="bg-blue-400 p-2 py-3 hover:bg-blue-500 rounded-full invisible">❯</a>
+              </div>
+              <p class="absolute left-66 right-10 top-1/2 flex -translate-y-1 transform justify-between">Your meeting is safe</p>
+            </div>
+          </div>
+        
+          <!-- Dots -->
+          <div class="flex justify-center gap-2 mt-5">
+            <a href="#slide1d" class="w-3 h-3 bg-gray-300 rounded-full block"></a>
+            <a href="#slide2d" class="w-3 h-3 bg-gray-300 rounded-full block"></a>
+            <a href="#slide3d" class="w-3 h-3 bg-gray-300 rounded-full block"></a>
+          </div>
+        
+        </section>
+      </div>
       </main>
   </body>
 </html>
